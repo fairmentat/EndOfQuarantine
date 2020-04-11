@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
      timerAction()
        
-        
-        
+        LableCount.text = "PIZDA"
+         label2.text = "BLEAT"
         
         
     }
@@ -30,9 +30,17 @@ class ViewController: UIViewController {
     }
     
     @objc func timerAction(){
-        LableCount.text = "PIDORASINA"
+        LableCount.text = "\(timer)"
+        
+        
+        //let temperatureFahrenheit = Int(round((sender.value * 9 / 5) + 32))
+        //fahrenheitLabel.text = "\(temperatureFahrenheit)ºF"
+        
+        
     }
-
+    @IBOutlet weak var label2: UILabel!
+   
+    
 }
 
 

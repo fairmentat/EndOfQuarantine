@@ -40,6 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="LableCount" destination="JZw-86-BAB" id="Q0U-95-CAo"/>
+                        <outlet property="label2" destination="9IX-0V-rYe" id="P9G-tN-188"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
