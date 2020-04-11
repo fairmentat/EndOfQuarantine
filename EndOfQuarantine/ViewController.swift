@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        countEnd()
-        
+     timerAction()
+       
         
         
         
@@ -22,13 +22,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var LableCount: UILabel!
     
+    var timer = Timer()
     
-    func countEnd () {
+    func testTime() {
         
-        LableCount.text = "Dima"
-        
-        
-        
+         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+    }
+    
+    @objc func timerAction(){
+        LableCount.text = "PIDORASINA"
     }
 
 }
